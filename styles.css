@@ -1,0 +1,121 @@
+:root {
+  color-scheme: light dark;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background-color: #0b0c10;
+  color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, rgba(58, 123, 213, 0.4), transparent 60%),
+    #0b0c10;
+  display: grid;
+  place-items: center;
+}
+
+main {
+  width: min(96vw, 640px);
+  background-color: #131623;
+  border-radius: 18px;
+  padding: 32px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.75rem;
+}
+
+.subtitle {
+  margin: 4px 0 0;
+  font-size: 0.95rem;
+  color: #aab7d1;
+}
+
+.search-panel {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+#search-input {
+  padding: 12px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.02);
+  color: inherit;
+  font-size: 1rem;
+}
+
+#search-input:focus {
+  outline: none;
+  border-color: rgba(58, 123, 213, 0.9);
+  box-shadow: 0 0 0 2px rgba(58, 123, 213, 0.25);
+}
+
+.status-message {
+  font-size: 0.85rem;
+  color: #93a2c1;
+}
+
+.results {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 380px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.result-item {
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 16px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.02);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+  text-align: left;
+  color: inherit;
+  width: 100%;
+  font: inherit;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.result-item strong {
+  font-size: 1rem;
+}
+
+.result-item .file-path {
+  font-size: 0.8rem;
+  color: #9ba7cf;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.result-item:hover {
+  border-color: rgba(58, 123, 213, 0.8);
+  transform: translateY(-1px);
+}
+
+.result-item:focus {
+  outline: 2px solid rgba(58, 123, 213, 0.6);
+  outline-offset: 2px;
+}
+
+.result-item::-moz-focus-inner {
+  border: 0;
+}

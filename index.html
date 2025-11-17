@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Meteor</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>File Meteor</h1>
+        <p class="subtitle">Search your files </p>
+      </header>
+
+      <section class="search-panel">
+        <input
+          id="search-input"
+          type="text"
+          placeholder="Search for files, folders, docs..."
+          autocorrect="off"
+          autocomplete="off"
+          spellcheck="false"
+        />
+        <div id="status" class="status-message">Type to discover files.</div>
+      </section>
+
+      <section id="results" class="results" aria-live="polite"></section>
+    </main>
+
+    <script src="renderer.js"></script>
+  </body>
+</html>
