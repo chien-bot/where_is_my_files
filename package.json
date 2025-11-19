@@ -2,16 +2,40 @@
   "name": "github_proj",
   "version": "1.0.0",
   "main": "main.js",
-  "scripts": {
-    "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
+  "description": "",
   "author": "",
   "license": "ISC",
-  "description": "",
+  "scripts": {
+    "start": "electron .",
+    "build:win": "electron-builder --win",      
+    "build:mac": "electron-builder --mac",      
+    "build:linux": "electron-builder --linux", 
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "build": {
+    "appId": "com.example.githubproj",          
+    "productName": "GithubProjApp",           
+    "directories": {
+      "output": "dist"                      
+    },
+    "files": [
+      "**/*",
+      "!dist",
+      "!node_modules/.cache"
+    ],
+    "win": {
+      "target": ["nsis"]                      
+    },
+    "mac": {
+      "target": ["dmg"]
+    },
+    "linux": {
+      "target": ["AppImage"]
+    }
+  },
   "devDependencies": {
     "electron": "^39.2.1",
     "electron-builder": "^26.0.12"
-  }
+  },
+  "keywords": []
 }

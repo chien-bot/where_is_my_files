@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+# Where_is_my_file
+where_is_my_file is a lightweight tool for quickly locating files on your local machine. It allows users to search by keywords and open the target file or folder directly from the search results, improving workflow efficiency.
+=======
 # File Meteor
 
 File Meteor is an Electron-powered desktop helper that lets you search for any file on your machine, open it, copy the path, and keep a recent history at hand—even before you start typing.
@@ -49,22 +53,11 @@ To let other people download an installable app instead of cloning the repo, use
 2. Run `npx electron-builder --mac` (or `--win`, `--linux`, etc.) to generate platform-specific installers or zip archives.
 3. Upload the generated installer/zip from `dist/` to GitHub Releases, your website, or any distribution channel. Share the download link so people can install File Meteor without cloning.
 
-## Direct downloads (per platform)
-
-Once you publish a release, point users to the relevant asset so they can click a link instead of cloning. Replace the placeholder URLs below with your actual release asset links:
-
-| Platform | Download |
-| --- | --- |
-| macOS | [File Meteor macOS](https://github.com/<your-username>/<repo>/releases/download/v1.0.0/File%20Meteor-1.0.0-arm64-mac.zip) |
-| Windows | [File Meteor Windows](https://github.com/<your-username>/<repo>/releases/download/v1.0.0/File%20Meteor%20Installer.exe) |
-| Linux | [File Meteor Linux](https://github.com/<your-username>/<repo>/releases/download/v1.0.0/File%20Meteor-linux.zip) |
-
-Update the filenames and version numbers when you publish new builds so the links stay current.
-
 ## Tips
-- If search results feel stale, ensure the app has filesystem permissions (especially on macOS) and leave the window open; every 5s refresh will rerun the query.
+- If search results feel stale, ensure the app has filesystem permissions (especially on macOS) and leave the window open; every 5s refresh will rerun the query
 - The recent list is stored in `localStorage` per user, so deleting the app data will clear it.
 
 ## License
 
 This project is available under the terms described in `LICENSE`.
+>>>>>>> 4e1afc9 (Initial commit)
