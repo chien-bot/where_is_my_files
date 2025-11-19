@@ -10,10 +10,10 @@ Built with **Electron**, designed for speed and minimal UI distractions.
 请选择与你系统对应的版本：
 
 - 🪟 **Windows (.exe)**  
-  👉 [Download for Windows](https://github.com/chien-bot/where_is_my_files/releases/latest/download/dist/GithubProjApp Setup 1.0.0.exe)
+  👉 [Download for Windows](https://github.com/chien-bot/where_is_my_files/releases/latest/download/GithubProjApp%20Setup%201.0.0.exe)
 
 - 🍎 **macOS (.dmg)**  
-  👉 [Download for macOS](https://github.com/chien-bot/where_is_my_files/releases/latest/download/dist/GithubProjApp-1.0.0-arm64.dmg)
+  👉 [Download for macOS](https://github.com/chien-bot/where_is_my_files/releases/latest/download/GithubProjApp-1.0.0-arm64.dmg)
 
 ---
 
